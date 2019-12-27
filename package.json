@@ -19,7 +19,7 @@
     "start": "ember serve",
     "test": "ember test",
     "test:all": "ember try:each",
-"deploy": "npm version patch && git push && git push --tags && npm publish"
+    "deploy": "npm version patch && git push && git push --tags && npm publish"
   },
   "dependencies": {
     "@octokit/rest": "^16.36.0",
@@ -33,6 +33,7 @@
     "ember-auto-import": "^1.5.2",
     "ember-cli": "~3.14.0",
     "ember-cli-dependency-checker": "^3.1.0",
+    "ember-cli-dotenv": "^3.0.1",
     "ember-cli-eslint": "^5.1.0",
     "ember-cli-inject-live-reload": "^2.0.1",
     "ember-cli-sri": "^2.1.1",
