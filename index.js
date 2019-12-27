@@ -16,6 +16,7 @@ module.exports = {
 
   included() {
     this._super.included.apply(this, arguments);
+    this.import('vendor/@octokit/rest/index.js');
   }
 
 };
