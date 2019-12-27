@@ -1,10 +1,11 @@
 'use strict';
 
+const path = require('path');
 module.exports = {
   name: require('./package').name,
 
-included() {
+included(app) {
 this._super.included.apply(this, arguments);
-this.import('vendor/ember-jarvis.css');
+app.import(path.join('vendor', 'ember-jarvis.css'));
 }
 };
