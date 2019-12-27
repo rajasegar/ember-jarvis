@@ -5,9 +5,9 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/rajasegar/ember-jarvis",
   "license": "MIT",
-  "author": "",
+  "author": "Rajasegar Chandran",
   "directories": {
     "doc": "doc",
     "test": "tests"
