@@ -14,8 +14,12 @@ header {
   grid-template-columns: 150px 1fr 150px 300px;
   background: #eee;
   border-bottom: 1px solid #ddd;
+  height: 50px;
 }
 
+header h1 {
+margin: 0;
+}
 header p {
   margin: 0;
   line-height: 50px;
