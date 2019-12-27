@@ -1,7 +1,7 @@
 ember-jarvis
 ==============================================================================
 
-[Short description of the addon.]
+Ember addon which provides codemod and customization services for AST-Builder, AST-Finder and JARVIS 
 
 
 Compatibility

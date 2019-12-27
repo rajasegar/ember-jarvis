@@ -18,7 +18,8 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
-    "test:all": "ember try:each"
+    "test:all": "ember try:each",
+"deploy": "npm version patch && git push && git push --tags && npm publish"
   },
   "dependencies": {
     "@octokit/rest": "^16.36.0",
