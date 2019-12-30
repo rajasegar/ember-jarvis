@@ -1,3 +1,52 @@
-<h2 id="title">Welcome to Ember</h2>
+<header>
+  <h1>ember-jarvis</h1>
 
-{{outlet}}
+  <div class="parser_wrapper">
+
+    <select>
+      <option>Javascript</option>
+      <option>Handlebars</option>
+    </select>
+    <span class="label-text">Parser:</span>
+
+    <select>
+      <option>recast</option>
+      <option>babel</option>
+    </select>
+  </div>
+  <div id="options">
+    <p>DarkMode: <Input @type="checkbox" @click={{action "toggleDarkMode"}}/></p>
+  </div>
+  <span class="label-text">{{parser}}: <strong>{{parserVersion}}</strong></span>
+</header>
+<main>
+  {{outlet}}
+  <SplitViewHorizontal>
+    <SplitViewVertical>
+      <div class="dummy-editor">
+        <h1>SOURCE</h1>
+      </div>
+      <div class="dummy-editor">
+        <h1>DESTINATION</h1> 
+      </div>
+    </SplitViewVertical>
+    <SplitViewVertical>
+      <div class="dummy-editor">
+        <h1>AST</h1>
+      </div>
+      <div class="dummy-editor">
+        <h1>CODEMOD</h1>
+      </div>
+    </SplitViewVertical>
+  </SplitViewHorizontal>
+</main>
+<footer>
+  <p>
+    Built with <a href="https://emberjs.com">Ember {{emberVersion}}</a> |
+    <a href="https://github.com/rajasegar/ast-node-builder">ast-node-builder:  {{nodeBuilderVersion}}</a> |
+    <a href="https://rajasegar.github.io/ast-finder">AST-Finder</a> |
+    <a href="https://rajasegar.github.io/jarvis">JARVIS</a> |
+    <a href="https://github.com/rajasegar/ast-builder">Github</a> |
+    <a href="https://github.com/rajasegar/ast-builder/issues">Report issues</a> 
+  </p>
+</footer>
