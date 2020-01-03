@@ -136,6 +136,12 @@ footer p {
 
 #options {
   margin-right: 10px;
+  display: flex;
+}
+
+#options p {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 
