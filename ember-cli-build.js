@@ -4,7 +4,17 @@ const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
   let app = new EmberAddon(defaults, {
-    // Add options here
+    codemirror: {
+      themes: ['solarized'],
+      modes: ['javascript', 'handlebars'],
+      addonFiles: [
+        'fold/foldcode.js', 
+        'fold/foldgutter.js',
+        'fold/foldgutter.css',
+        'edit/matchbrackets.js',
+        'fold/brace-fold.js'
+      ]
+    }
   });
 
   /*

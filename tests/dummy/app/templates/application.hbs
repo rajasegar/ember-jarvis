@@ -24,18 +24,24 @@
   <SplitViewHorizontal>
     <SplitViewVertical>
       <div class="dummy-editor">
-        <h1>SOURCE</h1>
+	{{ivy-codemirror 
+	  value="foo.bar()"
+	  options=(hash 
+	  lineNumbers=true 
+	  mode=mode 
+	  theme=customize.theme)
+	}}
       </div>
       <div class="dummy-editor">
-        <h1>DESTINATION</h1> 
+        {{ivy-codemirror theme=theme value="foo.bar()"}}
       </div>
     </SplitViewVertical>
     <SplitViewVertical>
       <div class="dummy-editor">
-        <h1>AST</h1>
+        {{ivy-codemirror theme=theme value="foo.bar()"}}
       </div>
       <div class="dummy-editor">
-        <h1>CODEMOD</h1>
+        {{ivy-codemirror theme=theme value="foo.bar()"}}
       </div>
     </SplitViewVertical>
   </SplitViewHorizontal>

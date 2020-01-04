@@ -7,5 +7,5 @@ export default Component.extend({
   layout,
   tagName: '',
   customize: service(),
-  darkMode: computed.reads('customize.darkMode')
+  darkMode: computed.alias('customize.darkMode')
 });
