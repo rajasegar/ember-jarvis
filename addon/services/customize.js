@@ -3,7 +3,8 @@ import { computed } from '@ember/object';
 
 export default Service.extend({
 
-darkMode: false,
+  darkMode: false,
+  smartUpdate: false,
   theme: computed('darkMode', function() {
     return this.get('darkMode') ? 'solarized dark' : 'solarized light';
   }),
