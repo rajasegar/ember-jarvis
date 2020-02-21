@@ -6,7 +6,7 @@ export default Service.extend({
   darkMode: false,
   smartUpdate: false,
   theme: computed('darkMode', function() {
-    return this.get('darkMode') ? 'solarized dark' : 'solarized light';
+    return this.get('darkMode') ? 'solarized dark' : 'default';
   }),
 
   toggleDarkMode() {

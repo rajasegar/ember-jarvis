@@ -27,7 +27,7 @@
     <SplitViewVertical>
       <div class="dummy-editor">
 	{{ivy-codemirror 
-	  value="foo.bar()"
+	  value=source
 	  options=(hash 
 	  lineNumbers=true 
 	  mode=mode 
@@ -35,12 +35,12 @@
 	}}
       </div>
       <div class="dummy-editor">
-        {{ivy-codemirror theme=theme value="foo.bar()"}}
+        {{ivy-codemirror value=destination options=(hash mode=mode theme=theme)}}
       </div>
     </SplitViewVertical>
     <SplitViewVertical>
       <div class="dummy-editor">
-        {{ivy-codemirror theme=theme value="foo.bar()"}}
+        {{ivy-codemirror value=codemod options=(hash mode=mode theme=theme)}}
       </div>
       <div class="dummy-editor">
         {{ivy-codemirror theme=theme value="foo.bar()"}}
