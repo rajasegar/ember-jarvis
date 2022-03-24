@@ -7,5 +7,5 @@ export default Component.extend({
   layout,
   tagName: '',
   customize: service(),
-  smartUpdate: computed.alias('customize.smartUpdate')
+  smartUpdate: computed.alias('customize.smartUpdate'),
 });

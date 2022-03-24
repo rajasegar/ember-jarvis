@@ -1,30 +1,30 @@
 export default {
-  'Javascript': {
-    'recast': {
+  Javascript: {
+    recast: {
       name: 'recast',
-      version: '0.18.5'
+      version: '0.18.5',
     },
-    'babel': {
+    babel: {
       name: 'babel',
-      version: '7.6.4'
+      version: '7.6.4',
     },
-    'babylon': {
+    babylon: {
       name: 'babylon',
-      version: '7.6.4'
+      version: '7.6.4',
     },
-    'flow': {
+    flow: {
       name: 'flow',
-      version: '0.112.0'
+      version: '0.112.0',
     },
-    'typescript': {
+    typescript: {
       name: 'typescript',
-      version: '3.6.4'
+      version: '3.6.4',
     },
   },
-  'Handlebars': {
+  Handlebars: {
     'ember-template-recast': {
       name: 'ember-template-recast',
-      version: '3.2.8'
-    }
-  }
+      version: '3.2.8',
+    },
+  },
 };

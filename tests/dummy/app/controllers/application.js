@@ -58,10 +58,10 @@ function spiTtnirp() {
 `;
 
 export default Controller.extend({
-customize: service(),
+  customize: service(),
   theme: computed.reads('customize.theme'),
   mode: 'javascript',
   source: sourceCode,
   codemod: CODEMOD,
-  destination: DESTINATION
+  destination: DESTINATION,
 });
